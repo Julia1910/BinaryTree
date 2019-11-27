@@ -276,7 +276,7 @@ public class BinaryTreeMap<K extends Comparable, V>  implements Map<K, V> {
                 Node temp = (Node)globalStack.pop();
                 if(temp != null)
                 {
-                    System.out.print(temp.value);
+                    System.out.print(temp.key);
                     localStack.push(temp.left);
                     localStack.push(temp.right);
                     if(temp.left != null ||
