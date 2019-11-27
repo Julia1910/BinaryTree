@@ -21,13 +21,16 @@ public class ViewMap {
         menu.put("1", "  1 - get Value from Tree by Key");
         menu.put("2", "  2 - remove Node");
         menu.put("3", "  3 - put new Value");
+        menu.put("4", "  4 - display Tree");
         menu.put("Q", "  Q - exit");
 
         methodsMenu = new LinkedHashMap<>();
         methodsMenu.put("1", this::pressButton1);
         methodsMenu.put("2", this::pressButton2);
         methodsMenu.put("3", this::pressButton3);
+        methodsMenu.put("4", this::pressButton4);
     }
+
 
     private void pressButton1() {
         log.info("Enter key");
@@ -49,6 +52,9 @@ public class ViewMap {
         controller.putNewNode(key, value);
     }
 
+    private void pressButton4() {
+        controller.printTree();
+    }
 
     private void outputMenu() {
         log.info("\nMENU:");

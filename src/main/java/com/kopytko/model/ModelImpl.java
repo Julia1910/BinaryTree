@@ -37,4 +37,9 @@ public class ModelImpl implements Model {
     public String getValueByKey(int key) {
         return treeMap.get(key);
     }
+
+    @Override
+    public void printTree() {
+        treeMap.displayTree();
+    }
 }

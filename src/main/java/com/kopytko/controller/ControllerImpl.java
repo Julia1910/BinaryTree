@@ -23,4 +23,9 @@ public class ControllerImpl implements Controller {
     public String getValueByKey(int key) {
         return model.getValueByKey(key);
     }
+
+    @Override
+    public void printTree() {
+        model.printTree();
+    }
 }
